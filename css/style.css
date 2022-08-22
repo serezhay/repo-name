@@ -1565,14 +1565,12 @@ body {
       flex-wrap: wrap;
       justify-content: center;
       margin-bottom: 20px;
-      border: 2px solid red;
   }
   .goods-item__img {
       display: flex;
       justify-content: center;
       width: 100%;
       margin-bottom: 20px;
-      border: 2px solid green;
   
   }
   .goods-item__border {
