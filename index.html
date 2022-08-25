@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="css/style_mobile.css"> -->
 </head>
 
 <body>
@@ -62,7 +61,7 @@
               </li>
             </ul>
             <h2 class="treand-title">
-              <a href="#0" class="treand-title-link"> сейчас в тренде: сад <br>на подоконнике </a>
+              <a href="#0" class="treand-title-link"> сейчас в тренде: сад на подоконнике </a>
             </h2>
           </div>
         </article>
@@ -411,7 +410,7 @@
             </div>
             <div class="item-price-wrapper">
               <div class="goods-item__price">
-                <span class="goods-price-old">1000&#8381; </span><br>
+                <span class="goods-price-old">1000&#8381; </span>
                 <span class="goods-price-new">800&#8381; </span>
               </div>
               <button class="goods-item__btn">в магазин </button>
@@ -424,7 +423,7 @@
           <picture class="goods-item__img">
             <source media="(max-width=768px" ) srcset="images/shop-item-mobile2.jpg">
             <source media="(max-width=1200px" ) srcset="images/shop-item-tablet2.jpg">
-            <img src="images/shop-item-mobile2.jpg" alt="Кукла «Зайчик»">
+            <img src="images/shop-item-desk2.jpg" alt="Кукла «Зайчик»">
           </picture>
           <div class="goods-item__border">
             <div class="goods-item__content">
@@ -434,7 +433,7 @@
             </div>
             <div class="item-price-wrapper">
               <div class="goods-item__price">
-                <span class="goods-price-old">500&#8381; </span><br>
+                <span class="goods-price-old">500&#8381; </span>
                 <span class="goods-price-new">400&#8381; </span>
               </div>
               <button class="goods-item__btn">в магазин </button>
@@ -445,7 +444,7 @@
           <picture class="goods-item__img">
             <source media="(max-width=768px" ) srcset="images/shop-item-mobile3.jpg">
             <source media="(max-width=1200px" ) srcset="images/shop-item-tablet3.jpg">
-            <img src="images/shop-item-mobile3.jpg" alt="Шестиугольная рамка">
+            <img src="images/shop-item-desk3.jpg" alt="Шестиугольная рамка">
           </picture>
           <div class="goods-item__border">
             <div class="goods-item__content">
@@ -455,7 +454,7 @@
             </div>
             <div class="item-price-wrapper">
               <div class="goods-item__price">
-                <span class="goods-price-old">500&#8381; </span><br>
+                <span class="goods-price-old">500&#8381; </span>
                 <span class="goods-price-new">400&#8381; </span>
               </div>
               <button class="goods-item__btn">в магазин </button>
@@ -473,18 +472,21 @@
       <div class="social">
         <ul class="social-list">
           <li class="social-resource">
-            <a class="social-resource-link" href="#0">
-              <img src="svg/001-dribbble.svg" alt="dribbble.svg" width="20px">
+            <a class="social-resource-link link-dribble" href="#0">
+              <span class="visually-hidden">ссылка на dribbble</span>
+              <!-- <img src="svg/001-dribbble.svg" alt="логотип dribbble.svg" width="20px"> -->
             </a>
           </li>
           <li class="social-resource">
-            <a class="social-resource-link" href="#0">
-              <img src="svg/001-pinterest.svg" alt="pinterest" width="20px">
+            <a class="social-resource-link link-pinterest" href="#0">
+              <span class="visually-hidden">ссылка на pinterest</span>
+              <!-- <img src="svg/001-pinterest.svg" alt="логотип pinterest" width="20px"> -->
             </a>
           </li>
           <li class="social-resource">
-            <a class="social-resource-link" href="#0">
-              <img src="svg//003-tumblr.svg" alt="tumblr" width="20px">
+            <a class="social-resource-link link-tumblr" href="#0">
+              <span class="visually-hidden">ссылка на tumblr</span>
+              <!-- <img src="svg/003-tumblr.svg" alt="логотип tumblr" width="20px"> -->
             </a>
           </li>
         </ul>
@@ -495,15 +497,15 @@
 
     </footer>
     <div class="popup">
-      <div class="popup-btn-close">
-        <button class="btn-close">
-          <img src="svg/form-x.svg" alt="кнопка закрыть">
-        </button>
-      </div>
       <div class="popup-wrapper">
+        <div class="popup-btn-close">
+          <button class="btn-close">
+            <span class="visually-hidden">кнопка закрыть</span>
+          </button>
+        </div>
         <h2 class="popup-title"> ваш фидбек</h2>
-        <div class="popup-form">
-          <form>
+        <form class="popup-form">
+          <div>
             <label for="select-visiting">Как часто вы заходите на сайт?</label>
             <select class="popup-select" name="visiting" id="select-visiting">
               <option>Почти каждый день</option>
@@ -511,9 +513,9 @@
               <option>Раз в несколько недель</option>
               <option>Несколько раз в год</option>
             </select>
-          </form>
-          <form class="popup-radio">
-            <span class="popup-radio-text"> Вы подписаны на e-mail рассылку?</span><br>
+          </div>
+          <div class="popup-radio">
+            <span class="popup-radio-text"> Вы подписаны на e-mail рассылку?</span>
             <label>
               <input type="radio" class="radio" name="radio-mailing">
               <span class="radio-malling-text">Да</span>
@@ -522,15 +524,15 @@
               <input type="radio" class="radio" name="radio-mailing">
               <span class="radio-malling-text">Нет</span>
             </label>
-          </form>
-          <form class="popup-input">
+          </div>
+          <div class="popup-input">
             <p>Расскажите, какой контент вы хотели бы видеть на нашем сайте?</p>
             <textarea class="popup-input__text" placeholder="Может, больше рецептов?"></textarea>
-          </form>
+          </div>
           <button class="popup-btn">
             <span class="popup-btn__text">отправить</span>
           </button>
-        </div>
+        </form>
       </div>
     </div>
   </div>
