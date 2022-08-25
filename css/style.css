@@ -550,9 +550,6 @@ button {
 .goods-item__img {
     display: flex;
     justify-content: center;
-    /* padding-left: 38px;
-    width: 86.5%;
-    height: 204px; */
 }
 .goods-item__border {
     border: 3px solid #b59f5b;
@@ -689,8 +686,9 @@ button {
     z-index: -1;
 }
 .popup-btn-close {
-    position: relative;
+    position: absolute;
     top: -30px;
+    right: 0;
     display: flex;
     justify-content: flex-end;
 }
@@ -706,6 +704,7 @@ button {
 }
 .popup-wrapper {
     background-color: #fff;
+    padding-top: 46px;
 }
 .popup-title {
     text-align: center;
@@ -725,16 +724,18 @@ button {
 }
 .popup-form {
     font-size: 0.8rem;
-    padding: 45px 20px 54px;
+    padding: 0 30px 54px;
 }
 .popup-select {
+    margin-bottom: 32px;
+}
+.popup-select__text {
     height: 48px;
     width: 100%;
     background-color: #f4f7f6;
     border: none;
     padding-left: 20px;
     margin-top: 8px;
-    margin-bottom: 35px;
     color:#000000;
     opacity: 0.6;
 
@@ -750,15 +751,25 @@ button {
 .popup-select:focus {
     outline: 1px solid #b59f5b;
 }
-.popup-radio {
+.popup-select-radio {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 32px;
 }
+.popup-radio-text {
+    width: 100%;
+    margin-bottom: 6px;
+}
+.label-radio {
+    margin-right: 14px;
+}
 .radio-malling-text{
-    padding-right: 17px;
+    width: 15px;
+    height: 15px;
 }
 .radio-malling-text::before {
     content: "";
-    flex: inline-block;
+    display: inline-block;
     width: 15px;
     height: 15px;
     background-image: url(../svg/form-empty-circle.svg);
@@ -766,7 +777,7 @@ button {
     background-position: center center;
     background-repeat: no-repeat;
     vertical-align: middle;
-    gap: 5px;
+    padding-right: 8px;
 }
 .radio:checked~.radio-malling-text::before {
     background-image: url(../svg/form-circle.svg);
@@ -790,10 +801,10 @@ button {
     box-sizing: border-box;
     font-family: inherit;
     margin-top: 12px;
-    padding: 20px 22px;
+    padding: 14px 22px;
     opacity: 0.6;
     width: 100%;
-    height: 110px;
+    height: 126px;
     resize:none;
     border: none;
     background-color: #f4f7f6;
