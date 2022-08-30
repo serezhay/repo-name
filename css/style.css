@@ -987,7 +987,6 @@ button {
         padding-top: 48px;
     }
     .goods-item__border {
-        width: 330px;
     }
     .footer {
         padding: 0 30px;
@@ -996,7 +995,7 @@ button {
         margin-bottom: 45px;
     }
     .popup {
-        visibility:visible;
+        visibility:hidden;
     }
     .popup-btn-close{
         top:-36px;
@@ -1258,7 +1257,6 @@ button {
       }
       .goods-item__border {
           margin-top: -62px;
-          width: 324px;
           padding-bottom: 28px;
           margin-left: 0;
       }
