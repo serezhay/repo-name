@@ -201,9 +201,6 @@ ul {
 .news:not(:last-child){
     margin-bottom: 62px ;
 }
-.news-text {
-    margin-left: 30px;
-}
 .news-img {
   display: block;
 }
@@ -236,7 +233,7 @@ ul {
     font-size: 1.25rem;
     color: #0F0D0E;
     line-height: 1.25;
-    padding-right: 25px;
+    padding-right: 20px;
     margin-bottom: 32px;
 }
 .news-name-link:hover {
@@ -450,7 +447,7 @@ button {
     border: 3px solid #f3f3f1;
     margin-top: 6px;
     margin-right: 5px;
-    padding: 3px 14px;
+    padding: 3px 13px;
 }
 .tag:hover {
     border: 3px solid #B59F5B;
@@ -552,24 +549,20 @@ button {
     margin-top: -30px;
     position: relative;
     flex-grow: 1;
+    padding: 44px 20px 24px 16px;
     padding-bottom: 26px;
 }
 .goods-item__content {
-    padding-left: 24px;
-    margin-bottom: 23px;
-    margin-right: 20px;
+    margin-bottom: 28px;
 }
 .goods_item__title {
     font-size: 1.25rem;
     line-height: 24px;
     text-transform: uppercase;
-    padding-top: 52px;
 }
 .goods-item__text {
-    width: 301px;
     font-size: 0.94rem;
     line-height: 22px;
-    padding-bottom: 10px;
 }
 .goods-item__link {
     color: #b59f5b;
@@ -581,11 +574,9 @@ button {
 .item-price-wrapper {
     display: flex;
     justify-content: space-between;
-    padding-right: 22px;
     align-items: flex-end;
 }
 .goods-item__price {
-    margin-left: 23px;
     font-family: OpenSasns-Bold, sans-serif;
     text-transform: uppercase;
 }
@@ -822,10 +813,8 @@ button {
     background-color: #323232;
 }
 /* tablet */
+
 @media (min-width:641px) and (max-width:1200px) {
-    body {
-        max-width: 100vw;
-    }
     .header {
         background-image: url(../images/banner-bg-tablet.jpg);
         padding: 42px 0 116px;
@@ -839,7 +828,6 @@ button {
     }
     .header-title {
         font-size: 2.6rem;
-        /* margin: 90px 64px 0; */
         margin: 86px auto 0;
     }
     .header-menu {
@@ -885,7 +873,6 @@ button {
     .checkbox:checked ~ .menu-list {
         display: flex;
     }
-    
     .header-title {
         font-size: 2.5rem;
         line-height: 55px;
@@ -905,31 +892,37 @@ button {
     .trend-post {
         width: calc(50% - 2px);
         padding: 72px 22px 16px;
-        height: 246px;
+        /* height: 246px; */
     }
     .trend-main {
-        padding: 20px 58px 29px 34px;
+        padding: 29px 58px 29px 34px;
+    }
+    .trend-tag {
+        margin-bottom: 0;
+    }
+    .treand-title {
+        line-height: 1.1;
     }
     .treand-title-link {
         font-size: 1rem;
     }
 
     .page-wrapper {
-        margin-bottom: 12px;
+        margin-bottom: 68px;
     }
     .main {
-        width: 50vw;
+        flex: 1 1 54%;
         box-sizing: border-box;
-    }
-    .aside {
-        width: 39vw;
-        box-sizing: border-box;
+        margin: 8px 0 0 4px;
     }
     .news {
         display: block;
         box-sizing: border-box;
         width: 392px;
-        margin-bottom: 55px;
+        /* margin-bottom: 66px; */
+    }
+    .news:not(:last-child) {
+        margin-bottom: 68px;
     }
     .news-img-link {
         box-sizing: border-box;
@@ -941,11 +934,17 @@ button {
         margin-bottom: 10px;
     }
     .news-text {
-        margin-left: 4px;
         height: 100%;
+        margin: 0;
+    }
+    .news-tags {
+        margin-bottom: 6px;
     }
     .news-tag-item:not(:first-child) {
         padding-left: 5px;
+    }
+    .news-name {
+        margin-bottom: 26px;
     }
     .news-name-link {
         font-size: 1rem;
@@ -954,7 +953,9 @@ button {
         margin-bottom: 26px;
     }
     .aside {
-        margin-left: 50px;
+        flex: 1 1 36%;
+        box-sizing: border-box;
+        margin-left: 46px;
     }
     .new-posts-top {
         padding-top: 4px;
@@ -962,37 +963,45 @@ button {
     .aside-item-mailing {
         margin-top: 58px;
     }
+    .aside-item-themes {
+        margin-top: 62px;
+    }
     .tag {
         margin-top: 5px;
     }
+    .chapter-goods {
+        padding: 0 34px;
+    }
     .goods {
-        padding: 0 30px;
+        /* padding: 0 30px; */
         flex-wrap: wrap;
-        gap: 76px;
-        margin-bottom: 25px;
+        gap: 26px 20px;
+        margin-bottom: 50px;
     }
     .goods-item {
-        padding-left: 20px;
-        width: calc(50% - 53px);
+        width: calc(50% - 10px);
         box-sizing: border-box;
     }
     .goods-item__img {
         width: 292px;
         height: 226px;
     }
+    .goods-item__border {
+        padding: 48px 24px 28px 20px;
+    }
     .goods-item__content {
         margin-bottom: 22px;
     }
     .goods_item__title {
-        padding-top: 48px;
+        font-size: 1.1rem;
     }
     .goods-item__border {
     }
     .footer {
-        padding: 0 30px;
+        padding: 0 34px;
     }
     .social {
-        margin-bottom: 45px;
+        margin-bottom: 48px;
     }
     .popup {
         visibility:hidden;
@@ -1016,15 +1025,19 @@ button {
         background-size: 23px;
     }
 }
+@media (min-width:641px) and (max-width:1200px) and (orientation:landscape) {
+    .trend-post{ 
+        width: calc(25% - 3px);
+        
+   }
+}
 /*  mobile */
 @media (max-width:640px) {
     .header {
-        padding-top: 30px;
         margin-bottom: 39px;
-        padding: 28px 0 214px;
+        padding: 24px 0 214px;
       }
       .header-wrapper {
-        /* max-width: 100%; */
         width: 100%;
       }
       .header-logo{
@@ -1032,6 +1045,16 @@ button {
       }
       .header-logo-img {
           width: 270px;
+      }
+      .header-menu {
+        display: flex;
+        flex-direction: row-reverse;
+        padding-right: 54px;
+        order: -1;
+        margin-bottom: 172px;
+        height: 30px;
+        box-sizing: border-box;
+        width: 100%;
       }
       .checkbox {
         display: block;
@@ -1071,17 +1094,10 @@ button {
       }
       .checkbox:checked ~ .menu-list {
           display: flex;
-          flex-wrap: wrap;
+          /* flex-wrap: wrap; */
       }
       .menu {
           flex-wrap: wrap;
-      }
-      .header-menu {
-          order: -1;
-          margin-bottom: 92px;
-          height: 30px;
-          box-sizing: border-box;
-          width: 100%;
       }
       .menu-list {
          display: none;
@@ -1094,7 +1110,7 @@ button {
       }
       /* //в тренде */
       .trend-wrapper {
-          margin: 0 auto 44px;
+          margin: 0 auto 48px;
          }
          .trend-header {
           font-size: 1rem;
@@ -1106,21 +1122,22 @@ button {
          .trend-post {
             flex-wrap: wrap;
             width: 100%;
-            padding: 94px 18px 16px;
-            /* height: 230px; */
+            padding: 0px 18px 18px 18px;
+            height: 230px;
              
          }
          .trend-main {
-             padding: 20px 21px 26px;
+             padding: 28px 21px 26px;
          }
          .trend-tag {
-             margin-top: 23px;
-             padding-top: 5px;
              margin-bottom: 5px;
          }
          .trend-tag__link {
              font-size: 0.8rem;
              padding-right: 10px;
+         }
+         .treand-title {
+            line-height: 0.9;
          }
          .treand-title-link {
              font-size: 1rem;
@@ -1135,21 +1152,22 @@ button {
       /* //основная страница */
       .page-wrapper {
           flex-wrap: wrap;
-          margin: 0 14px 0;
-          padding: 0;
+          padding: 0 14px ;
+          margin-bottom: 48px;
       }
       .main {
-          margin-bottom: 66px;
+          margin-bottom: 64px;
           width: 100%;
       }
       .news{
           flex-wrap: wrap;
-          /* padding-left: 14px; */
-          padding-top: 4px;
       }
       .news:not(:last-child) {
-          margin-bottom: 56px ;
+          margin-bottom: 60px ;
       }
+      .news-img-link{
+        width: 100%;
+    }
       .news-img {
         width: 100%;
         height: 253px;
@@ -1167,15 +1185,16 @@ button {
       .news-name {
           font-size: 1rem;
           margin-bottom: 14px;
+          padding-right: 0px;
       }
       .news-name-link {
           line-height: 1.35;
       }
       .news-text-meta {
-          margin-bottom: 10px;
+          margin-bottom: 12px;
       }
       .news-text-about {
-          font-size: 0.8rem;
+          font-size: 0.9rem;
           line-height: 20px;
           /* padding-right: 50px; */
       }
@@ -1185,7 +1204,6 @@ button {
       .aside {
          margin: 0;
          padding: 0;
-         max-width: 100%;
       }
       .aside-item {
           /* padding-left: 13px; */
@@ -1219,18 +1237,20 @@ button {
       }
      
       /* теги */
+      .aside {
+        max-width: 100%;
+      }
       .aside-item-tags {
           margin-top: 42px;
       }
       .tags-list {
-          margin-left: 14px;
       }
       .tag-link {
           font-size: 0.75rem;
       }
       /* темы */
       .aside-item-themes {
-          margin: 42px 0 42px;
+          margin: 42px 0 0;
       }
       .themes-list {
           /* padding-left: 14px; */
@@ -1241,30 +1261,34 @@ button {
       }
       .goods {
           flex-wrap: wrap;
-          margin-bottom: 20px;
+          gap: 24px;
+          margin-bottom: 42px;
       }
       .goods-item {
           width: 100%;
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          margin-bottom: 20px;
       }
       .goods-item__img {
           justify-content: center;
           width: 100%;
-          margin-bottom: 20px;
+          margin-bottom: 26px;
       }
       .goods-item__border {
-          margin-top: -62px;
+          margin-top: -56px;
           padding-bottom: 28px;
           margin-left: 0;
       }
       .goods-item__content {
-          padding-left: 16px;
+        margin-bottom: 24px;
+      }
+      .goods-item__title {
+        font-size: 1rem;
       }
       /* footer */
       .social {
+        width: 100%;
           margin-bottom: 46px ;
       }
       /* /// окно */
@@ -1313,8 +1337,8 @@ button {
           margin-bottom: 30px;
       }
     }
-    @media (max-width:640px) and (orientation:landscape) {
-        .trend-post{ 
-             width: calc(50% - 2px);
-        }
+@media (max-width:640px) and (orientation:landscape) {
+    .trend-post { 
+        width:calc(50% - 2px)
     }
+}
