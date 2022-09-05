@@ -651,10 +651,11 @@ button {
 .popup {
     display: flex;
     flex-direction: column;
-    margin: auto;
-    width: 390px;
+    /* margin: auto; */
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    top: 240px;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
@@ -671,6 +672,10 @@ button {
     background-color: #000000;
     opacity: 0.6;
     z-index: -1;
+}
+.popup-wrapper {
+    position: relative;
+    width: 390px;
 }
 .popup-btn-close {
     position: absolute;
@@ -892,7 +897,7 @@ button {
     .trend-post {
         width: calc(50% - 2px);
         padding: 72px 22px 16px;
-        /* height: 246px; */
+        height: 246px;
     }
     .trend-main {
         padding: 29px 58px 29px 34px;
@@ -911,13 +916,11 @@ button {
         margin-bottom: 68px;
     }
     .main {
-        flex: 1 1 54%;
-        box-sizing: border-box;
         margin: 8px 0 0 4px;
+        flex-grow: 1;
     }
     .news {
-        display: block;
-        box-sizing: border-box;
+        flex-wrap: wrap;
         width: 392px;
         /* margin-bottom: 66px; */
     }
@@ -925,13 +928,13 @@ button {
         margin-bottom: 68px;
     }
     .news-img-link {
-        box-sizing: border-box;
+        display: block;
         width: 392px;
         height: 302px;
+        margin-bottom: 10px;
     }
     .news-img {
         width: 100%;
-        margin-bottom: 10px;
     }
     .news-text {
         height: 100%;
@@ -953,9 +956,7 @@ button {
         margin-bottom: 26px;
     }
     .aside {
-        flex: 1 1 36%;
-        box-sizing: border-box;
-        margin-left: 46px;
+        margin-left: 0px;
     }
     .new-posts-top {
         padding-top: 4px;
@@ -1002,9 +1003,6 @@ button {
     }
     .social {
         margin-bottom: 48px;
-    }
-    .popup {
-        visibility:hidden;
     }
     .popup-btn-close{
         top:-36px;
@@ -1165,11 +1163,7 @@ button {
       .news:not(:last-child) {
           margin-bottom: 60px ;
       }
-      .news-img-link{
-        width: 100%;
-    }
       .news-img {
-        width: 100%;
         height: 253px;
       }
       .news-text {
@@ -1292,10 +1286,9 @@ button {
           margin-bottom: 46px ;
       }
       /* /// окно */
-      .popup {
-          /* width: 330px; */
-          width: 91.6%;
-          top: 20px;
+      .popup-wrapper {
+        width: 330px;
+        box-sizing: border-box;
       }
       .btn-close {
           width: 27px;
@@ -1308,14 +1301,17 @@ button {
           padding-top: 24px;
           margin-bottom: 26px;
       }
+      .popup-form {
+        padding: 0;
+      }
       .popup-select {
           margin-bottom: 30px;
       }
       .popup-radio {
           margin-bottom: 30px;
       }
-      .radio-malling-text{
-          padding-right: 30px;
+      label-radio:not(:last-child) {
+        margin-right: 28px;
       }
       .radio-malling-text::before {
           width: 27px;
