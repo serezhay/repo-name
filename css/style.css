@@ -1165,6 +1165,7 @@ button {
       }
       .news-img {
         height: 253px;
+        max-width: 100%;
       }
       .news-text {
         margin-left: 0;
@@ -1255,7 +1256,7 @@ button {
       }
       .goods {
           flex-wrap: wrap;
-          gap: 24px;
+          /* gap: 24px; */
           margin-bottom: 42px;
       }
       .goods-item {
@@ -1263,6 +1264,7 @@ button {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
+          margin-bottom: 24px;
       }
       .goods-item__img {
           justify-content: center;
